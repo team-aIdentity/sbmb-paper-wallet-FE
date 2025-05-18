@@ -4,17 +4,17 @@ import Header from "./components/Header/Header";
 import Landing from "./pages/Landing";
 import Footer from "./components/Footer/Footer";
 
-// const Landing = () => <Landing />;
-
 const App = () => {
   return (
-    <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-      </Routes>
-      <Footer />
-    </>
+    <div className="flex items-center justify-center bg-black">
+      <div className="w-full max-w-screen-xl">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+        </Routes>
+        <Footer />
+      </div>
+    </div>
   );
 };
 

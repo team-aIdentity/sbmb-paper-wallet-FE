@@ -1,7 +1,7 @@
 import React from "react";
 
-import pixelBox from "@assets/background/pixel-box.svg";
-import arrowDown from "@assets/background/arrow-down.svg";
+import pixelBoxMD from "@assets/pixel/pixel-box-md.svg";
+import arrowDown from "@assets/pixel/arrow-down.svg";
 
 const Landing5 = () => {
   return (
@@ -15,13 +15,13 @@ const Landing5 = () => {
             style={{ lineHeight: "60px" }}
           >
             <div className="relative">
-              <img src={pixelBox} />
+              <img src={pixelBoxMD} />
               <div className="absolute inset-0 flex items-center justify-center text-black">
                 1단계 : EVM 종이지갑을 구매
               </div>
             </div>
             <div className="relative">
-              <img src={pixelBox} />
+              <img src={pixelBoxMD} />
               <div className="absolute inset-0 flex items-center justify-center text-black">
                 2단계 : 6/30 기준 보유자에게
                 <br />
@@ -29,14 +29,14 @@ const Landing5 = () => {
               </div>
             </div>
             <div className="relative">
-              <img src={pixelBox} />
+              <img src={pixelBoxMD} />
               <div className="absolute inset-0 flex items-center justify-center text-black">
                 3단계 : SBMB 사용 → Web3 NFT 구매, 대출, 전환 등<br />
                 서비스 제공
               </div>
             </div>
             <div className="relative">
-              <img src={pixelBox} />
+              <img src={pixelBoxMD} />
               <div className="absolute inset-0 flex items-center justify-center text-black">
                 4단계 : 콘솔 NFT소유자는 고액권의 콘솔 전환시점
                 <br />

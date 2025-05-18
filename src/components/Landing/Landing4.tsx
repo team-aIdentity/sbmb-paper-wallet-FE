@@ -17,7 +17,7 @@ const Landing4 = () => {
       <div className="flex flex-col items-center gap-60">
         <div className="text-6xl">SBMB</div>
         <div className="flex flex-col items-center gap-20">
-          <div className="text-[32px]" style={{ lineHeight: "60px" }}>
+          <div className="text-2xl" style={{ lineHeight: "60px" }}>
             SBMB는 DAO가 보유한 판매 수익 비트모빅(BMB)을 고액권에 예치하고,
             <br />
             해당 예치량에 맞춰 1:1 비율로 발행되어 에어드랍되는 EVM 기반의

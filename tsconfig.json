@@ -10,6 +10,8 @@
       "@/*": ["./src/*"],
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"]
-    }
+    },
+    "noUnusedParameters": false,
+    "noUnusedLocals": false
   }
 }
