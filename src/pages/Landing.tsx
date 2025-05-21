@@ -1,25 +1,26 @@
 import React from "react";
 
-import Landing1 from "@/components/Landing/Landing1"; // 메인
-import Landing2 from "@/components/Landing/Landing2"; // SBMB 프로젝트는 무엇인가요?
-import Landing3 from "@/components/Landing/Landing3"; // 기존 지갑과의 차이점 & 판매 정보
-import Landing4 from "@/components/Landing/Landing4"; // SBMB
-import Landing5 from "@/components/Landing/Landing5"; // 어떻게 진행되나요?
-import Landing6 from "@/components/Landing/Landing6"; // 어떻게 작동되나요?
-import Landing7 from "@/components/Landing/Landing7"; // Over View
-import Landing8 from "@/components/Landing/Landing8";
+import HeroView from "@/components/Landing/HeroView"; // 히어로
+import ProjectInfo from "@/components/Landing/ProjectInfo"; // SBMB 프로젝트는 무엇인가요?
+import WalletInfo from "@/components/Landing/WalletInfo"; // 기존 지갑과의 차이점 & 판매 정보
+import SBMBInfo from "@/components/Landing/SBMBInfo"; // SBMB
+import HowItWorks from "@/components/Landing/HowItWorks"; // 어떻게 작동되나요?
+import RoadMap from "@/components/Landing/RoadMap"; // 로드맵
+import OverView from "@/components/Landing/OverView"; // Over View
+
+// import Landing8 from "@/components/Landing/Landing8";
 
 const Landing = () => {
   return (
-    <div>
-      <Landing1 />
-      <Landing2 />
-      <Landing3 />
-      <Landing4 />
-      <Landing5 />
-      <Landing6 />
-      <Landing7 />
-      <Landing8 />
+    <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
+      <HeroView />
+      <ProjectInfo />
+      <WalletInfo />
+      <SBMBInfo />
+      <HowItWorks />
+      <RoadMap />
+      <OverView />
+      {/* <Landing8 /> */}
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import React from "react";
 
-import logo from "@assets/logo/logo.png";
+import logo from "@assets/logo/logo.svg";
+import logoKakao from "@assets/logo/kakao.svg.webp";
+import logoDiscord from "@assets/logo/discord_logo.png";
 
 const Footer = () => {
   return (
@@ -8,23 +10,24 @@ const Footer = () => {
       className="flex w-full flex-col justify-between gap-10 p-14"
       style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
     >
-      <div className="flex flex-col gap-4 text-white">
+      <div className="flex flex-col gap-8 text-white">
         <div className="flex items-center gap-4">
           <img src={logo} className="w-40" />
           <div className="text-3xl">
-            <div>SBMB DAO</div>
-            <div>Stable BMB DAO</div>
+            <div>SBMB</div>
+            <div>(Stable_BTCMobick)</div>
           </div>
         </div>
 
-        <div className="text-xl">
+        <div className="flex flex-col gap-4 text-xl">
           <div>
-            Stable BMB DAO는 신뢰성과 실물 기반 자산을 연결하는 Web3 생태계를
-            구축합니다.
+            SBMB는 비트모빅을 Web3에서 사용할 수 있게 하기위한 신뢰 기반
+            스테이블 토큰입니다.
           </div>
           <div>
-            SBMB ConsolePass는 이러한 철학을 바탕으로 운영하는 DAO
-            프로젝트입니다.
+            실사용이 가능한 구조를 통해 내부 순환과 외부 유입을 동시에
+            설계되었으며, NFT, M2E, 디파이 등의 프로젝트를 SBMB와 연동하여
+            구축할 수 있습니다.
           </div>
         </div>
       </div>
@@ -34,11 +37,23 @@ const Footer = () => {
           @ 2025 StableBMB DAO. All Rights Reserved
         </div>
         <div className="flex flex-col gap-4">
-          <div className="text-2xl">contantDao.bmb.io</div>
-          <div className="flex gap-14">
-            <div className="h-24 w-24 bg-white" />
-            <div className="h-24 w-24 bg-white" />
-            <div className="h-24 w-24 bg-white" />
+          <div className="text-2xl">choonsim.dev@gmail.com </div>
+          {/* TODO : 링크 삽입 */}
+          <div className="flex justify-end gap-8">
+            <div
+              className="h-24 w-24 rounded-lg bg-white"
+              style={{
+                backgroundImage: `url(${logoKakao})`,
+                backgroundSize: "cover",
+              }}
+            />
+            <div
+              className="h-24 w-24 rounded-lg bg-white"
+              style={{
+                backgroundImage: `url(${logoDiscord})`,
+                backgroundSize: "cover",
+              }}
+            />
           </div>
         </div>
       </div>

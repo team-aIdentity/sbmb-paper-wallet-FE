@@ -1,11 +1,11 @@
 import React from "react";
 
-import logo from "@assets/logo/logo.png";
+import logo from "@assets/logo/logo.svg";
 
 const Header = () => {
   return (
     <div
-      className="fixed flex w-full max-w-screen-xl items-center justify-between px-14 py-4"
+      className="fixed z-20 flex w-full max-w-screen-xl items-center justify-between px-14 py-4"
       style={{ backgroundColor: "rgba(255, 255, 255, 0.1)" }}
     >
       <img src={logo} className="h-20 w-20" />
