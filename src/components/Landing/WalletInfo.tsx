@@ -66,19 +66,20 @@ const WalletInfo = () => {
         </div>
 
         <div className="flex w-full justify-between">
-          <div className="flex flex-col gap-18 text-2xl">
+          <div className="flex flex-col justify-center gap-18 text-2xl">
             <div className="flex flex-col gap-4">
-              <span className="text-3xl">[판매 정보]</span>
-              <span>- 가격 : 10.2 MO</span>
-              <span>- 구매 제한 : 없음 (1인당 수량 제한 없음)</span>
-              <span>- 발행 수량 : 총 12,000장 한정</span>
-              <span>- 판매 마감일 : 2025년 12월 28일</span>
+              <span className="text-3xl">배포 정보 :</span>
+              <span>• 가격 : 10.2 MO</span>
+              <span>• 배포 수량 : 총 11,000장</span>
+              <span>• 신청 제한 : 없음 (1인당 신청 제한 없음)</span>
+              <span>• 배포 종료일 : 2025년 12월 28일</span>
             </div>
             <div className="flex flex-col gap-4">
-              <span className="text-3xl">[판매 구성]</span>
-              <span>- SBMB 수령 전용 EVM 종이지갑 실물 1장</span>
-              <span>- 콘솔 전환권 NFT 에어드랍 자격 (6/30)</span>
-              <span>- 10 SBMB 에어드랍 자격 (6/30)</span>
+              <span className="text-3xl">신청 혜택 :</span>
+              <span>• SBMB 수령 전용 EVM 종이지갑 실물 1장 </span>
+              <span>• 10 SBMB 에어드랍 자격</span>
+              <span>• 콘솔 전환 혜택 NFT 에어드랍 자격</span>
+              {/* <span>- SBMB 수령 전용 EVM 종이지갑 실물 1장</span> */}
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-4">

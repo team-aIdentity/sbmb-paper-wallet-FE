@@ -7,19 +7,19 @@ const ProjectInfo = () => {
     <div
       className="h-auto w-full p-30 pb-0 text-white"
       style={{
-        backgroundImage: `url(${background2})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${background2})`,
         backgroundPosition: "top",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundColor: "black",
       }}
     >
-      <div className="flex flex-col gap-60">
+      <div className="flex flex-col gap-120">
         <div className="text-center text-6xl">SBMB 프로젝트는 무엇인가요?</div>
         <div className="flex flex-col gap-20">
           <div className="text-5xl">EVM 종이지갑</div>
           <div className="flex flex-col gap-14">
-            <div className="flex flex-col gap-4 text-2xl">
+            <div className="mb-20 flex flex-col gap-4 text-2xl">
               <div style={{ lineHeight: "50px" }}>
                 Base(이더리움 계열) 체인에서 사용되는 Web3 디지털 지갑의 실물
                 버전입니다.
@@ -33,7 +33,7 @@ const ProjectInfo = () => {
               className="mb-20 cursor-pointer text-3xl text-[#8ffdc2] underline"
               onClick={() =>
                 window.open(
-                  "https://choonsim.gitbook.io/sbmb-introduce",
+                  "https://choonsim.gitbook.io/sbmb_introduce",
                   "_blank",
                 )
               }

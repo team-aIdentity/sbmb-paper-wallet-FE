@@ -34,7 +34,7 @@ const Footer = () => {
 
       <div className="flex justify-between text-white">
         <div className="flex items-end text-3xl">
-          @ 2025 StableBMB DAO. All Rights Reserved
+          @ 2025 StableBMB. All Rights Reserved
         </div>
         <div className="flex flex-col gap-4">
           <div className="text-2xl">choonsim.dev@gmail.com </div>

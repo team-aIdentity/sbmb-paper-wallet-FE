@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header";
-import Landing from "./pages/Landing";
 import Footer from "./components/Footer/Footer";
+
+import Landing from "./pages/Landing";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 const App = () => {
   useEffect(() => {
@@ -56,6 +59,8 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Landing />} />
+          {/* <Route path="/login" element={<Login />} /> */}
+          {/* <Route path="/signup" element={<Signup />} /> */}
         </Routes>
         <Footer />
       </div>
