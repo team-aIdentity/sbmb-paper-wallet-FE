@@ -5,7 +5,7 @@ import { Paperclip } from "lucide-react";
 
 const ProjectInfo = () => {
   return (
-    <section className="relative flex w-full justify-center overflow-hidden px-10 py-20 md:px-20 2xl:px-30">
+    <section className="relative flex w-full justify-center overflow-hidden px-10 py-20 md:px-20 xl:px-25 2xl:px-30">
       <div className="flex flex-col gap-50">
         <div className="flex flex-col gap-10 text-center">
           <h1 className="xl:5xl text-3xl font-bold md:text-4xl 2xl:text-6xl">

@@ -8,7 +8,7 @@ import { Mouse, Wallet } from "lucide-react";
 
 const HeroView = () => {
   return (
-    <section className="relative flex w-full justify-center overflow-hidden bg-gradient-to-b from-[#8FD8C7] via-[#E6F6F1] to-[#FFFFFF] px-10 pt-50 md:px-20 xl:justify-start 2xl:px-30">
+    <section className="relative flex w-full justify-center overflow-hidden bg-gradient-to-b from-[#8FD8C7] via-[#E6F6F1] to-[#FFFFFF] px-10 pt-50 md:px-20 xl:justify-start xl:px-25 2xl:px-30">
       <div className="flex w-full max-w-full flex-col gap-50">
         <div className="z-10 flex flex-col gap-10">
           <h1 className="xl:5xl text-3xl font-bold md:text-4xl 2xl:text-6xl">
