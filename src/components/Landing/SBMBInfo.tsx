@@ -43,13 +43,25 @@ const SBMBInfo = () => {
         </div>
 
         <div className="flex flex-col gap-6">
-          {list.map((item) => (
-            <div key={item.title} className="flex flex-col gap-6 md:flex-row">
-              <img src={item.img} className="md:w-50" />
+          {list.map((item, index) => (
+            <div
+              key={item.title}
+              className={`flex flex-col gap-6 md:flex-row md:items-center xl:w-1/2 ${
+                index % 2 === 1 ? "xl:ml-auto" : ""
+              }`}
+            >
+              <img
+                src={item.img}
+                className={`md:w-50 ${index % 2 === 1 ? "xl:!hidden" : ""}`}
+              />
               <div className="flex flex-col gap-4">
                 <h1 className="text-3xl font-bold">{item.title}</h1>
                 <p className="text-xl font-bold">{item.content}</p>
               </div>
+              <img
+                src={item.img}
+                className={`hidden md:w-50 xl:block ${index % 2 === 1 ? "xl:block" : "xl:hidden"}`}
+              />
             </div>
           ))}
         </div>

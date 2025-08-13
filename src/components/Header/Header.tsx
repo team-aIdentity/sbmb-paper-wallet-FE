@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Button } from "../ui/button";
+import { BookText } from "lucide-react";
 import logo from "@assets/logo/logo.svg";
 
 const Header = () => {
+  const nav = useNavigate();
+
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -22,7 +27,16 @@ const Header = () => {
       className="fixed z-25 flex h-25 w-full items-center justify-between p-8 transition-all duration-300 ease-in-out"
       style={scrolled ? { backgroundColor: "rgba(255, 255, 255, 0.5)" } : {}}
     >
-      <img src={logo} className="h-14 w-14" />
+      <img src={logo} className="h-14 w-14" onClick={() => nav("/")} />
+
+      <Button
+        variant={scrolled ? "gradient" : "default"}
+        size="rounded"
+        onClick={() => nav("/guide")}
+      >
+        <BookText />
+        가이드
+      </Button>
     </header>
   );
 };

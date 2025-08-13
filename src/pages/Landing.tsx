@@ -17,7 +17,7 @@ const Landing = () => {
       <HowItWorks />
       <WalletInfo />
       <RoadMap />
-      <OverView />
+      {/* <OverView /> */}
     </div>
   );
 };

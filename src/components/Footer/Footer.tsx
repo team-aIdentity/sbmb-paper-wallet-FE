@@ -1,8 +1,8 @@
 import React from "react";
 
 import logo from "@assets/logo/logo.svg";
-import logoKakao from "@assets/logo/kakao.svg.webp";
-import logoDiscord from "@assets/logo/discord_logo.png";
+import logoKakao from "@assets/logo/kakao_logo.svg";
+import logoDiscord from "@assets/logo/discord_logo.svg";
 
 const buttonList = [
   {
@@ -36,15 +36,14 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-center gap-3 xl:justify-end">
+      <div className="flex justify-center xl:justify-end">
         {buttonList.map((item, index) => (
-          <div
+          <img
             key={index}
-            className="h-15 w-15 overflow-hidden rounded-full"
+            src={item.logo}
+            className="h-30 w-30"
             onClick={() => window.open(item.href, "_blank")}
-          >
-            <img src={item.logo} className="" />
-          </div>
+          />
         ))}
       </div>
 
