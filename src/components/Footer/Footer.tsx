@@ -6,7 +6,7 @@ import logoDiscord from "@assets/logo/discord_logo.svg";
 
 const buttonList = [
   {
-    href: "",
+    href: "https://open.kakao.com/o/gq3NvqFf",
     logo: logoKakao,
   },
   {

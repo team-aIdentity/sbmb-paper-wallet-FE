@@ -6,7 +6,7 @@ const Guide = () => {
   return (
     <div className="mx-auto w-full text-[#2F3E46]">
       <GuideTop />
-      <GuideAccordian />
+      {/* <GuideAccordian /> */}
     </div>
   );
 };

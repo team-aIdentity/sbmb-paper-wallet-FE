@@ -26,10 +26,7 @@ const HeroView = () => {
             size="xl"
             className="w-fit"
             onClick={() =>
-              window.open(
-                "https://docs.google.com/forms/d/e/1FAIpQLScvdIY7t06hSQ7tqaFGoH05eC7hH-CepxwVUsdZKV6bH2HHxw/viewform",
-                "_blank",
-              )
+              window.open("https://forms.gle/tFSTGXeAWR754wW28", "_blank")
             }
           >
             <Wallet />
