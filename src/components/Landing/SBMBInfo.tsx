@@ -37,7 +37,7 @@ const SBMBInfo = () => {
     <section className="relative flex w-full justify-center overflow-hidden px-10 py-20 md:px-20 xl:px-25 2xl:px-30">
       <div className="flex w-full flex-col items-center gap-25">
         <div className="text-center">
-          <h1 className="xl:5xl text-3xl font-bold md:text-4xl 2xl:text-6xl">
+          <h1 className="text-3xl font-[900] md:text-4xl xl:text-5xl 2xl:text-6xl">
             SBMB가 왜 필요할까요?
           </h1>
         </div>
@@ -55,9 +55,13 @@ const SBMBInfo = () => {
                 className={`md:w-50 ${index % 2 === 1 ? "xl:!hidden" : ""}`}
               />
               <div className="flex flex-col gap-4">
-                <h1 className="text-3xl font-bold">{item.title}</h1>
+                <h1
+                  className={`text-3xl font-[900] xl:text-[40px] ${index % 2 === 1 ? "xl:text-right" : ""}`}
+                >
+                  {item.title}
+                </h1>
                 <p
-                  className={`text-xl font-bold whitespace-pre-line ${index % 2 === 1 ? "xl:text-right" : ""}`}
+                  className={`text-xl font-[700] whitespace-pre-line md:text-2xl ${index % 2 === 1 ? "xl:text-right" : ""} xl:text-[28px] 2xl:text-3xl`}
                 >
                   {item.content}
                 </p>

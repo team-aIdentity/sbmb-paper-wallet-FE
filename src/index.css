@@ -3,6 +3,26 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Pretendard";
+  src: url("/src/assets/fonts/Pretendard-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("/src/assets/fonts/Pretendard-Bold.otf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("/src/assets/fonts/Pretendard-SemiBold.otf");
+  font-weight: 700;
+}
+
+body {
+  font-family: "Pretendard";
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);

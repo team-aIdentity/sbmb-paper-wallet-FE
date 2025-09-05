@@ -24,19 +24,21 @@ const Header = () => {
 
   return (
     <header
-      className="fixed z-25 flex h-25 w-full items-center justify-between p-8 transition-all duration-300 ease-in-out"
+      className="fixed z-25 flex h-25 w-full items-center justify-between p-8 transition-all duration-300 ease-in-out md:px-20 xl:px-25 2xl:px-30"
       style={scrolled ? { backgroundColor: "rgba(255, 255, 255, 0.5)" } : {}}
     >
-      <img src={logo} className="h-14 w-14" onClick={() => nav("/")} />
+      <div className="mx-auto flex w-full max-w-[1920px] items-center justify-between">
+        <img src={logo} className="h-14 w-14" onClick={() => nav("/")} />
 
-      <Button
-        variant={scrolled ? "gradient" : "default"}
-        size="rounded"
-        onClick={() => nav("/guide")}
-      >
-        <BookText />
-        가이드
-      </Button>
+        <Button
+          variant={scrolled ? "gradient" : "default"}
+          size="rounded"
+          onClick={() => nav("/guide")}
+        >
+          <BookText />
+          가이드
+        </Button>
+      </div>
     </header>
   );
 };

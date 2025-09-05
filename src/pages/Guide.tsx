@@ -4,7 +4,7 @@ import GuideTop from "@/components/Guide/GuideTop";
 
 const Guide = () => {
   return (
-    <div className="mx-auto w-full text-[#2F3E46]">
+    <div className="mx-auto h-screen w-full text-[#2F3E46]">
       <GuideTop />
       {/* <GuideAccordian /> */}
     </div>

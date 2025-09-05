@@ -10,7 +10,7 @@ const HowItWorks = () => {
     <section className="relative flex w-full justify-center overflow-hidden px-10 py-20 md:px-20 xl:px-25 2xl:px-30">
       <div className="flex flex-col gap-25">
         <div className="text-center">
-          <h1 className="xl:5xl text-3xl font-bold md:text-4xl 2xl:text-6xl">
+          <h1 className="text-3xl font-[900] md:text-4xl xl:text-5xl 2xl:text-6xl">
             어떻게 작동되나요?
           </h1>
         </div>
